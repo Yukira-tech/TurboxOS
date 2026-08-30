@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "name": "hello.tbx",
+      "content": "# Turbox 演示脚本\nprint hello from turbox\nprint microkernel online\n"
+    },
+    {
+      "name": "notes.txt",
+      "content": "Turbox 微内核：create / write / run 已可用。\n"
+    },
+    {
+      "name": "boot.log",
+      "content": "[kernel] hal_init ok\n[kernel] tfs_init ok\n[kernel] shell started\n"
+    }
+  ]
+}

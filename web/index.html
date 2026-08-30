@@ -1,0 +1,69 @@
+<!-- ============================================================
+    @file index.html
+    @brief Turbox 网页终端窗口
+
+    层级：
+      TurboBoxOS/web/
+
+    项目内绝对路径：
+      TurboBoxOS/web/index.html
+
+    模块作用：
+      提供浏览器里的 Turbox 终端界面，包含输出区和命令行输入区。
+      双模式运行：
+        1. 镜像同步模式，fetch 到 fs_state.json 时展示真实文件系统状态；
+        2. 内置模拟模式，fetch 失败时用浏览器内存里的虚拟文件系统运行。
+      当前模式显示在底部状态栏。
+
+    使用者：
+      开发者或演示者，通过浏览器观察 Turbox 运行效果。
+
+    项目角色：
+      web 层的静态页面，是内核文件系统状态的可视化前端。
+
+    引入说明：
+      依赖 style.css 提供样式。
+      依赖 terminal.js 提供交互逻辑。
+
+    维护记录：
+      2026-08-30 初始创建
+    ============================================================ -->
+    
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbox 终端</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="terminal-window">
+        <!-- 标题栏：Turbox 标识 + 装饰性窗口按钮 -->
+        <header class="title-bar">
+            <span class="title">Turbox 微内核终端</span>
+            <span class="window-dots">
+                <i class="dot dot-r"></i><i class="dot dot-y"></i><i class="dot dot-g"></i>
+            </span>
+        </header>
+
+        <!-- 终端输出区 + 输入行 -->
+        <main id="screen" class="screen">
+            <div id="output" class="output"></div>
+            <div class="input-line">
+                <span class="prompt">turbox&gt;&nbsp;</span>
+                <input id="cmdline" type="text" autocomplete="off" spellcheck="false" autofocus>
+            </div>
+        </main>
+
+        <!-- 状态栏：显示当前运行模式 -->
+        <footer class="status-bar">
+            <span id="mode-label">模式：检测中…</span>
+            <span class="status-right">Turbox microkernel · web terminal</span>
+        </footer>
+    </div>
+
+    <script src="terminal.js"></script>
+</body>
+</html>
