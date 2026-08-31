@@ -29,7 +29,7 @@
 
 ## 1. WHAT IS THIS
 
-Turbox OS is a minimal micro-kernel operating system built for **educational purposes**. It is not a production system, not a Unix clone, not a performance benchmark. It exists to answer one question:
+TurboxOS is a minimal micro-kernel operating system built for **educational purposes**. It is not a production system, not a Unix clone, not a performance benchmark. It exists to answer one question:
 
 > What happens between pressing the power button and seeing a shell prompt?
 
@@ -169,12 +169,6 @@ Each layer keeps only the minimal implementation. Code is readable, auditable, a
 
 ---
 
-## 10. LICENSE
-
-MIT License. See `LICENSE` for details.
-
----
-
 <p align="center"><a href="#top">Back to Top ↑</a></p>
 
 ---
@@ -203,7 +197,7 @@ MIT License. See `LICENSE` for details.
 
 ## 1. 这是什么
 
-Turbox OS 是一个为**教学目的**而写的微型内核。它不是生产系统，不是 Unix 克隆，也不是性能测试。它只回答一个问题：
+TurboxOS 是一个为**教学目的**而写的微型内核。它不是生产系统，不是 Unix 克隆，也不是性能测试。它只回答一个问题：
 
 > 从按下电源键到看到 shell 提示符，中间发生了什么？
 
@@ -340,12 +334,6 @@ BIOS → bootloader → 保护模式 → C++ 内核 → 进程
 ## 9. 文档
 
 - [SPEC.md](docs/SPEC.md) — 完整系统规范
-
----
-
-## 10. 许可证
-
-MIT 许可证。详见 `LICENSE` 文件。
 
 ---
 
