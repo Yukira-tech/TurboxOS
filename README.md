@@ -73,7 +73,7 @@ Every layer is implemented from scratch, with readability prioritized over perfo
 ## 4. DIRECTORY STRUCTURE
 
 ```
-TurboBoxOS/
+TurboxOS/
 ├── boot/       # Boot sector and loader
 ├── drv/        # Device drivers
 ├── fs/         # TurboxFS memory filesystem
