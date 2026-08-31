@@ -247,7 +247,7 @@ Turbox OS 是一个为**教学目的**而写的微型内核。它不是生产系
 ## 4. 目录结构
 
 ```
-TurboBoxOS/
+TurboxOS/
 ├── boot/       # 引导扇区和加载器
 ├── drv/        # 设备驱动
 ├── fs/         # TurboxFS 内存文件系统
